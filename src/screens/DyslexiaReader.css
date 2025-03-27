@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #014A75;
+  --secondary-color: #008080;
+  --light-color: #F4F4F4;
+  --dark-color: #333;
+}
+
+.dyslexia-reader {
+  background-color: var(--light-color);
+  min-height: 100vh;
+}
+
+.dyslexia-reader h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0F092D;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.75rem 0;
+}
+
+.canvas {
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  width: 100%;
+}
+
+.text-extracted {
+  background-color: white;
+  width: 80vw;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.2rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.125rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.input-file {
+  width: 20%;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .dyslexia-reader .flex {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .uploaded-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .uploaded-image,
+  .canvas-container {
+    width: 48%;
+  }
+}

@@ -1,0 +1,143 @@
+:root {
+  --primary-color: #014A75;
+  --secondary-color: #008080;
+  --light-color: #F4F4F4;
+  --dark-color: #333;
+}
+  .stt-container {
+    background-color: #F5F5F5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .navbar {
+    width: 100vw;
+    background-color: var(--primary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .stt-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .stt-title {
+    font-size: 3rem;
+    color: #0F092D;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Dropdown selector for language */
+  .stt-language-select {
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+    border: 2px solid --primary-color;
+    border-radius: 10px;
+    color: var(--primary-color);
+    transition: border-color 0.3s;
+  }
+  
+  .stt-language-select:focus {
+    border-color: var(--secondary-color);
+  }
+  
+  /* Text area for speech transcription */
+  .stt-textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #F0F0F0;
+    color: var(--primary-color);
+    border: 2px solid #014A75;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .stt-textarea:focus {
+    border-color: var(--secondary-color);
+  }
+  
+  /* Button for speaking (styled as hold-to-speak) */
+  .stt-speak-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stt-speak-btn i {
+    font-size: 2rem;
+  }
+  
+  .stt-speak-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+  }
+  
+  .stt-speak-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .stt-listening-status {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #014A75;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .stt-content {
+      width: 90vw;
+    }
+  
+    .stt-title {
+      font-size: 2.5rem;
+    }
+  
+    .stt-speak-btn {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  
+    .stt-speak-btn i {
+      font-size: 1.8rem;
+    }
+  }
+  

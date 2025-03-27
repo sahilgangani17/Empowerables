@@ -1,0 +1,58 @@
+/* ObjectDetection.css */
+
+.object-detection {
+    background-color: #d1fae5; /* bg-green-200 */
+    min-height: 100vh;
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px; /* Add padding around the content */
+  }
+  
+  .object-detection h1 {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 600; /* font-semibold */
+    margin: 2rem 0; /* mt-12 mb-8 */
+    text-align: center; /* Centered title */
+  }
+  
+  .card {
+    background-color: white; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Ensure rounded corners are maintained */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    width: 840px; /* Fixed width for the card */
+    height: 600px; /* Fixed height for the card */
+    position: relative; /* For absolute positioning of elements inside */
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Scale up slightly on hover */
+  }
+  
+  .webcam {
+    position: absolute; /* Absolute positioning */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9; /* Above canvas */
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+  }
+  
+  .canvas {
+    position: absolute; /* Absolute positioning */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 8; /* Below webcam */
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Optional border */
+    border-radius: 10px; /* Rounded corners */
+  }
+  

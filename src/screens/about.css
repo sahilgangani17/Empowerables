@@ -1,0 +1,80 @@
+
+
+.containerr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.images img {
+    border-radius: 50%;
+    width: 45%;
+    margin: 10px 0;
+}
+.content {
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    gap: 20px; /* Add space between elements */
+}
+
+.content h2 {
+    color: #FF8C00;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    color: #333333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.2; /* Improved spacing between lines */
+}
+
+.content p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 400px; /* Ensure the paragraph doesn't stretch too wide */
+}
+
+.content .icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; /* Adds spacing between icon and text */
+}
+
+.content .icon-text i {
+    font-size: 24px;
+}
+
+.content .icon-text .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .icon-text .text h3 {
+    color: #333333;
+    font-size: 18px;
+    margin: 0;
+}
+
+.content .icon-text .text p {
+    color: #666666;
+    font-size: 14px;
+    margin: 0;
+}
