@@ -1,6 +1,7 @@
 import React from 'react';
 import ChatBubble from '../components/ChatBubble'; // Change to ChatBubble
 import Bot from '../components/Bot'; // Change to Bot
+import ChatBot from '../components/Chatbot';
 import { Navbar } from '../components/Navbar';
 
 export const Chat = () => {

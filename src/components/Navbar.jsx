@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../utils/logo.png';
-import SimpleForm from './Bot'; // Assuming this is your chatbot component
+import Chatbot from './Chatbot'; // Assuming this is your chatbot component
 
 export const Navbar = () => {
   const [isChatbotOpen, setChatbotOpen] = useState(false);
@@ -37,6 +37,7 @@ export const Navbar = () => {
           </li>
         </ul>
         <div className="help">
+          {/* Update this to toggle the chatbot on button click */}
           <a href="#" onClick={toggleChatbot}>Need help?</a>
         </div>
         <div className="navbar-toggle" id="mobile-menu">
@@ -49,10 +50,8 @@ export const Navbar = () => {
       {/* Chatbot Modal */}
       {isChatbotOpen && (
         <div className="chatbot-modal">
-          {/* <div className="modal-content"> */}
           <span className="close-button" onClick={toggleChatbot}>&times;</span>
-          <SimpleForm /> {/* Your chatbot component */}
-          {/* </div> */}
+          <Chatbot /> {/* Your chatbot component */}
         </div>
       )}
 

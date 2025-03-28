@@ -6,8 +6,9 @@ import { Services } from "../components/Services";
 import { Slider } from "../components/Slider";
 import { Steps } from "../components/Steps";
 //import { useState } from 'react'; // Import useState for managing chat state
-import Bot from '../components/Bot'; // Adjust path if necessary
+// import Bot from '../components/Bot'; // Adjust path if necessary
 import ChatBubble from '../components/ChatBubble'; // Adjust path if necessary
+import ChatBot from '../components/Chatbot';
 
 export const Home = () => {
   const [chatActive, setChatActive] = useState(false);
@@ -25,7 +26,7 @@ export const Home = () => {
       <div id="chat-container">
         {
           chatActive ? (
-            <Bot setChatActive={setChatActive} />
+            <ChatBot setChatActive={setChatActive} />
           ) : (
             <div onClick={() => setChatActive(!chatActive)}>
               <ChatBubble />
